@@ -5,10 +5,12 @@
  */
 
 #include <dt-bindings/zmk/matrix_transform.h>
+#include <physical_layouts.dtsi>
 
 / {
     chosen {
         zmk,kscan = &kscan0;
+        zmk,physical-layout = &allium36_layout;
     };
 
     default_transform: keymap_transform_0 {
@@ -39,4 +41,52 @@ RC(3,0) RC(3,1) RC(3,2)                     RC(3,5) RC(3,6) RC(3,7)
              , <&gpio1 06 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
     };
+
+    allium36_layout: allium36_layout {
+        compatible = "zmk,physical-layout";
+        display-name = "Default";
+        keys  //                     w   h    x    y     rot    rx    ry
+            = <&key_physical_attrs 100 100    0    0       0     0     0>
+            , <&key_physical_attrs 100 100  100    0       0     0     0>
+            , <&key_physical_attrs 100 100  200    0       0     0     0>
+            , <&key_physical_attrs 100 100  300    0       0     0     0>
+            , <&key_physical_attrs 100 100  400    0       0     0     0>
+            , <&key_physical_attrs 100 100  575    0       0     0     0>
+            , <&key_physical_attrs 100 100  675    0       0     0     0>
+            , <&key_physical_attrs 100 100  775    0       0     0     0>
+            , <&key_physical_attrs 100 100  875    0       0     0     0>
+            , <&key_physical_attrs 100 100  975    0       0     0     0>
+            , <&key_physical_attrs 100 100    0  100       0     0     0>
+            , <&key_physical_attrs 100 100  100  100       0     0     0>
+            , <&key_physical_attrs 100 100  200  100       0     0     0>
+            , <&key_physical_attrs 100 100  300  100       0     0     0>
+            , <&key_physical_attrs 100 100  400  100       0     0     0>
+            , <&key_physical_attrs 100 100  575  100       0     0     0>
+            , <&key_physical_attrs 100 100  675  100       0     0     0>
+            , <&key_physical_attrs 100 100  775  100       0     0     0>
+            , <&key_physical_attrs 100 100  875  100       0     0     0>
+            , <&key_physical_attrs 100 100  975  100       0     0     0>
+            , <&key_physical_attrs 100 100    0  200       0     0     0>
+            , <&key_physical_attrs 100 100  100  200       0     0     0>
+            , <&key_physical_attrs 100 100  200  200       0     0     0>
+            , <&key_physical_attrs 100 100  300  200       0     0     0>
+            , <&key_physical_attrs 100 100  400  200       0     0     0>
+            , <&key_physical_attrs 100 100  575  200       0     0     0>
+            , <&key_physical_attrs 100 100  675  200       0     0     0>
+            , <&key_physical_attrs 100 100  775  200       0     0     0>
+            , <&key_physical_attrs 100 100  875  200       0     0     0>
+            , <&key_physical_attrs 100 100  975  200       0     0     0>
+            , <&key_physical_attrs 100 100  100  330       0     0     0>
+            , <&key_physical_attrs 100 100  200  330       0     0     0>
+            , <&key_physical_attrs 100 100  300  330       0     0     0>
+            , <&key_physical_attrs 100 100  675  330       0     0     0>
+            , <&key_physical_attrs 100 100  775  330       0     0     0>
+            , <&key_physical_attrs 100 100  875  330       0     0     0>
+            ;
+    };
+};
+
+&allium36_layout {
+    transform = <&default_transform>;
+    kscan = <&kscan0>;
 };
