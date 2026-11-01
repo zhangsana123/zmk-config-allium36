@@ -1,0 +1,17 @@
+/*
+ * Copyright (c) 2024
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include "allium36.dtsi"
+
+&kscan0 {
+    col-gpios
+        = <&gpio0 9  GPIO_ACTIVE_HIGH>
+        , <&gpio0 10 GPIO_ACTIVE_HIGH>
+        , <&gpio1 11 GPIO_ACTIVE_HIGH>
+        , <&gpio1 13 GPIO_ACTIVE_HIGH>
+        , <&gpio1 15 GPIO_ACTIVE_HIGH>
+        ;
+};
