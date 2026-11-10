@@ -85,12 +85,12 @@ RC(2,0)  RC(2,1)  RC(2,2)  RC(2,3)  RC(2,4)      RC(2,5)  RC(2,6)  RC(2,7)  RC(2
             , <&key_physical_attrs 100 100  975  200       0     0     0>
             , <&key_physical_attrs 100 100 1075  200       0     0     0>
 // Row 3 - thumb row (CTRL, LWR, SPC  |  RET, RSE, ALT)
-            , <&key_physical_attrs 100 100  100  330       0     0     0>
-            , <&key_physical_attrs 100 100  200  330       0     0     0>
             , <&key_physical_attrs 100 100  300  330       0     0     0>
+            , <&key_physical_attrs 100 100  400  330       0     0     0>
+            , <&key_physical_attrs 100 100  500  330       0     0     0>
+            , <&key_physical_attrs 100 100  675  330       0     0     0>
+            , <&key_physical_attrs 100 100  775  330       0     0     0>
             , <&key_physical_attrs 100 100  875  330       0     0     0>
-            , <&key_physical_attrs 100 100  975  330       0     0     0>
-            , <&key_physical_attrs 100 100 1075  330       0     0     0>
             ;
     };
 };
