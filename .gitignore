@@ -1,2 +1,6 @@
 
 .zmk/
+
+# 本地下载的 nice!oled 模块副本，无需提交（west.yml 会从 GitHub 拉取）
+zmk-nice-oled-main/
+zmk-nice-oled-main.zip
